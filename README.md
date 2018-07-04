@@ -1,6 +1,5 @@
 # mysql1-afternoon
 SQL 1 afternoon Project - Complete
-
 /* create table Person (
   id integer primary key autoincrement,
   name varchar(1500),
@@ -45,6 +44,31 @@ SQL 1 afternoon Project - Complete
 
 /* select * from person where favoritecolor in ('Blue') or favoritecolor in ('Red'); */
 
+
+/* Table Orders */
+
+/* create table Orders (
+  PersonID integer primary key,
+  ProductName varchar(1500),
+  ProductPrice int,
+  Quantity int); */
+/* select * from Orders; */
+
+/* insert into Orders (PersonID, ProductName, ProductPrice, Quantity)
+values 
+	(01, 'CheesePizza', 18, 1),
+    (02, 'VegetarianPizza', 8, 2),
+    (03, 'Lentils', 20, 1),
+    (04, 'Vegie Burger', 12, 3),
+    (05, 'Tofu Sticks', 10, 5) */
+
+/* select * from Orders; */
+
+/* select sum(Quantity) from Orders; */
+
+/* select sum(ProductPrice) from Orders; */
+
+/* select sum(ProductPrice) from Orders where PersonID = 01; */
 
 
 /* Table Artist */
@@ -106,4 +130,15 @@ select * from Artist order by Name desc limit 10 */
 /* select avg(Total) from Invoice; */
 
 /* select round(sum(Total),1) from Invoice; */
+
+
+
+
+
+Before Class Mini Project - Queries that I created
+select * from Artist;
+select FirstName, LastName, Country from Employee;
+select Name, Composer, Milliseconds from Track where Milliseconds > 299000;
+select count(*) from Track where Milliseconds > 299000;
+
 
